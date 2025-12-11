@@ -9,52 +9,65 @@
 </head>
 
 <body>
-    <h2 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-8">
+                <h2 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
                 <form action="">
-                      <!-- Testo da inserire -->
+                    <!-- Testo da inserire -->
                     <div class="col">
-                            <label for="name-user">Nome Cognome</label>
-                            <input class="form-control" placeholder=" " type="text" id="name-field"
-                                required />
-                        </div>
-                        <div class="col">
-                             <label for="km">Km da Percorrere</label>
-                            <input class="form-control" placeholder=" " type="text" id="km-field" required />
-                        </div>
+                        <label for="name-user">Nome Cognome</label>
+                        <input class="form-control" placeholder=" " type="text" id="name-field" required />
+                    </div>
+                    <div class="col">
+                        <label for="km">Km da Percorrere</label>
+                        <input class="form-control" placeholder=" " type="text" id="km-field" required />
+                    </div>
                     <div class="row g-3 row-cols-2">
-                         <!-- selezione a tendina -->
+                        <!-- selezione a tendina -->
                         <div class="col">
 
                             <select id="title-field" class="form-select">
-                                <option value="">Fascia d'età</option>
+                                <label for="eta-user">Fascia d'età</label>
+                                <option value="">Scegli l'età</option>
                                 <option value="Maggiore">Maggiorenne</option>
                                 <option value="Minore">Minorenne</option>
-                               
+
                             </select>
                         </div>
-                    
+
                         <!-- Bottone -->
                         <div class="col">
-                            <button id="button" class="btn btn-primary ">Genera</button>
+                            <button id="button" class="btn btn-primary">Genera</button>
                         </div>
                         <div class="col">
-                            <button id="button" class="btn btn-primary ">Annulla</button>
+                            <button id="button" class="btn btn-danger ">Annulla</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-md-4">
                 <h2 class="title">IL TUO BIGLIETTO</h2>
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="row ">
-                            
-                        </div>
-                    </div>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome Passeggero</th>
+                            <th scope="col">Offerta</th>
+                             <th scope="col">Carrozza</th>
+                             <th scope="col">Codice CP</th>
+                              <th scope="col">Costo Biglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="output-nome"></td>
+                            <td id="output-offerta"></td>
+                            <td id="output-carrozza"></td>
+                            <td id="output-codice"></td>
+                            <td id="output-costo"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

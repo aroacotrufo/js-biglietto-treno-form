@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Biglietteria</title>
+    <script type="text/javascript"></script>
+</head>
+
+<body>
+    <h2 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8">
+                <form action="">
+                      <!-- Testo da inserire -->
+                    <div class="col">
+                            <input class="form-control" placeholder="Nome Cognome" type="text" id="name-field"
+                                required />
+                        </div>
+                        <div class="col">
+                            <input class="form-control" placeholder="Km da percorrere" type="text" id="km-field" required />
+                        </div>
+                    <div class="row g-3 row-cols-2">
+                         <!-- selezione a tendina -->
+                        <div class="col">
+                            <select id="title-field" class="form-select">
+                                <option value="">Fascia d'età</option>
+                                <option value="Maggiore">Maggiorenne</option>
+                                <option value="Minore">Minorenne</option>
+                               
+                            </select>
+                        </div>
+                    
+                        <!-- Bottone -->
+                        <div class="col">
+                            <button id="button" class="btn btn-primary ">Genera</button>
+                        </div>
+                        <div class="col">
+                            <button id="button" class="btn btn-primary ">Annulla</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h2 class="title">IL TUO BIGLIETTO</h2>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row ">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
